@@ -324,7 +324,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: "Livvic" sans-serif;
+  font-family: "Livvic";
 }
 
 main {
@@ -379,5 +379,56 @@ img {
 }
 
 .site-header {
-  padding: 77px 0;
+  padding: 77px 0 140px;
+  background-color: #014E56;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.navbar {
+  margin: 0 0 0 80px;
+}
+
+.navbar__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar__item + .navbar__item {
+  margin-left: 40px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFF;
+}
+
+.mainbtn {
+  margin-left: auto;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFF;
+  display: inline-block;
+  padding: 9px 33px;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  transition: all 0.2s ease;
+}
+.mainbtn:hover {
+  color: #002529;
+  background-color: #FFF;
 }/*# sourceMappingURL=style.css.map */
