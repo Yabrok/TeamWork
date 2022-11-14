@@ -379,7 +379,7 @@ img {
 }
 
 .site-header {
-  padding: 77px 0 140px;
+  padding: 77px 0 130px;
   background-color: #014E56;
 }
 
@@ -423,7 +423,7 @@ img {
   line-height: 28px;
   color: #FFF;
   display: inline-block;
-  padding: 9px 33px;
+  padding: 9px 33px 10px;
   border: 2px solid #FFFFFF;
   border-radius: 24px;
   transition: all 0.2s ease;
@@ -431,4 +431,54 @@ img {
 .mainbtn:hover {
   color: #002529;
   background-color: #FFF;
+}
+
+.hero {
+  background-image: url("../../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.hero__inner {
+  padding: 0 0 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textbox-hero {
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  color: #FFF;
+}
+
+.textr {
+  color: #F67E7E;
+}
+
+.hero__content {
+  width: 100%;
+  max-width: 445px;
+}
+.hero__content::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-image: url("../../images/Rectangle.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 79px;
+}
+
+.hero__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
