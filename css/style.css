@@ -370,4 +370,25 @@ img {
   font-style: normal;
   font-weight: 700;
   src: local(""), url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  padding: 77px 0;
 }/*# sourceMappingURL=style.css.map */
