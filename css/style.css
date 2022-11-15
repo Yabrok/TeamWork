@@ -434,8 +434,10 @@ img {
 }
 
 .hero {
+  background-color: #014E56;
   background-image: url("../../images/hero-bg.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero__inner {
@@ -472,6 +474,7 @@ img {
   height: 4px;
   background-image: url("../../images/Rectangle.svg");
   background-repeat: no-repeat;
+  background-size: 100%;
   margin-bottom: 79px;
 }
 
