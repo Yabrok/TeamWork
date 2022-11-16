@@ -1,0 +1,31 @@
+.site-article {
+    background-color: #F67E7E;
+    background-image: url('../../images/ar-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.site-article__inner {
+    padding: 76px 0;
+    display: flex;
+    align-items: center;
+}
+
+.site-article__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #012F34;
+}
+
+
+.mainbtn-article {
+    color: #012F34;
+    border: 2px solid #012F34;
+
+    &:hover {
+        background-color: #012F34;
+        color: #fff;
+    }
+}
