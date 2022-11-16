@@ -7,7 +7,6 @@
 
 .teams__inner {
     padding: 140px 0 200px;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,4 +85,56 @@
     color: #FFF;
     mix-blend-mode: normal;
     opacity: 0.8;
+}
+
+@media only screen and(max-width:768px) {
+    .teams {
+        background-image: url('../../images/teams-mg_mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .teams__inner {
+        padding: 100px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .textbox-team {
+        &::before {
+            margin-bottom: 32px;
+        }
+    }
+
+    .teams__title {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and(max-width:576px){
+    .textbox-teams {
+        max-width: 240px;
+    }
+
+    .teams__item {
+        flex-direction: column;
+        align-items: center;
+
+        &::before {
+            width: 72px;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    }
+
+    .teamsitems__title {
+        text-align: center;
+    }
+
+    .teamsitems__text {
+        text-align: center;
+    }
 }

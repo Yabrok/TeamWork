@@ -29,3 +29,37 @@
         color: #fff;
     }
 }
+
+@media only screen and(max-width:786px) {
+    .site-article {
+        background-image: none;
+        background-image: url('../../images/article-bg_mobile.svg');
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
+    .site-article__inner {
+        padding: 86px 0;
+    }
+
+    .site-article__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and(max-width:576px) {
+    .site-article__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-article__title {
+        margin-bottom: 24px;
+    }
+
+    .mainbtn-article {
+        margin-left: 0;
+    }
+}

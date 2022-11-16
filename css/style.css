@@ -325,6 +325,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  background-color: #014E56;
   font-family: "Livvic";
 }
 
@@ -434,6 +435,32 @@ img {
   background-color: #FFF;
 }
 
+.burger {
+  display: none;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-header {
+    padding: 77px 0 112px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .site-header {
+    padding: 48px 0 80px;
+  }
+  .navbar {
+    display: none;
+  }
+  .mainbtn-header {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
 .hero {
   background-color: #014E56;
   background-image: url("../../images/hero-bg.jpg");
@@ -487,6 +514,54 @@ img {
   color: #FFF;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-image: url("../../images/hero-bg_mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  .hero__inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textbox-hero {
+    margin: 0 auto;
+  }
+  .hero__title {
+    text-align: center;
+    font-size: 64px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+  .hero__content {
+    margin: 0 auto;
+  }
+  .hero__content::before {
+    display: none;
+  }
+  .hero__text {
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero__inner {
+    padding: 0 0 197px;
+  }
+  .textbox-hero {
+    max-width: 327px;
+    margin: 0 auto;
+  }
+  .hero__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .hero__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
 .teams {
   background-color: #012F34;
   background-image: url("../../images/teams-bg.jpg");
@@ -573,6 +648,46 @@ img {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 768px) {
+  .teams {
+    background-image: url("../../images/teams-mg_mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .teams__inner {
+    padding: 100px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .textbox-team::before {
+    margin-bottom: 32px;
+  }
+  .teams__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .textbox-teams {
+    max-width: 240px;
+  }
+  .teams__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .teams__item::before {
+    width: 72px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .teamsitems__title {
+    text-align: center;
+  }
+  .teamsitems__text {
+    text-align: center;
+  }
+}
 .stories {
   background-color: #004147;
   background-image: url("../../images/stories-bg.jpg");
@@ -648,6 +763,33 @@ img {
   color: #FFF;
 }
 
+@media only screen and (max-width: 786px) {
+  .stories {
+    background-image: none;
+    background-image: url("../../images/stor-bg_mobile.svg"), url("../../images/stor-bg_mobile2.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+  .stories__inner {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textbox-stories {
+    max-width: 573px;
+  }
+  .stories__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .stories__list {
+    flex-direction: column;
+  }
+  .stories__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
 .site-article {
   background-color: #F67E7E;
   background-image: url("../../images/ar-bg.jpg");
@@ -678,6 +820,34 @@ img {
   color: #fff;
 }
 
+@media only screen and (max-width: 786px) {
+  .site-article {
+    background-image: none;
+    background-image: url("../../images/article-bg_mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+  }
+  .site-article__inner {
+    padding: 86px 0;
+  }
+  .site-article__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .site-article__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-article__title {
+    margin-bottom: 24px;
+  }
+  .mainbtn-article {
+    margin-left: 0;
+  }
+}
 .site-footer {
   background-color: #002529;
 }

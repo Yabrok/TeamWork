@@ -70,3 +70,38 @@
     text-align: center;
     color: #FFF;
 }
+
+@media only screen and(max-width:786px) {
+    .stories {
+        background-image: none;
+        background-image: url('../../images/stor-bg_mobile.svg'), url('../../images/stor-bg_mobile2.svg');
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+
+    }
+
+    .stories__inner {
+        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textbox-stories {
+        max-width: 573px;
+    }
+
+    .stories__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .stories__list {
+        flex-direction: column;
+    }
+    .stories__item:not(:last-child){
+        margin-bottom: 48px;
+    }
+
+    
+}
